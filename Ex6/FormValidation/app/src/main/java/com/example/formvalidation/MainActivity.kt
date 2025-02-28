@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 val pass = password.text.toString()
                 when {
                     userText.matches(Regex("^[A-Z]$")) -> {
-                        Toast.makeText(this, "Username Invalid", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Email Invalid", Toast.LENGTH_SHORT).show()
                         return@setOnClickListener
                     }
                    !pass.matches(Regex("^[0-9]{4}")) -> {
@@ -39,12 +39,12 @@ class MainActivity : AppCompatActivity() {
                    }
 
 
-                    else -> { Toast.makeText(this, "Invalid BRuh!", Toast.LENGTH_SHORT).show()}
+                    else -> { Toast.makeText(this, "Invalid Credentials!", Toast.LENGTH_SHORT).show()}
                 }
                 return@setOnClickListener
             } else {
 
-                Toast.makeText(this, "Logged IN!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "You are logged in using your Email!", Toast.LENGTH_SHORT).show()
                 //val intent = Intent(this, MainActivity2::class.java)
                 //startActivity(intent)
             }
