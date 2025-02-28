@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/s_count"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="75sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_checkIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tech Lounge Check In" />
+
+    <Button
+        android:id="@+id/bt_checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tech Lounge Check Out" />
+</LinearLayout>
