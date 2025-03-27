@@ -24,7 +24,7 @@ reader takes advantage of BufferedReader because it provides a temporary area fo
 ```
 private val PERMISSION_REQUEST_CODE = 101
 ```
-Why a request code? The callback method onRequestPermissionRequest() should know which one to permit, a developer can code to ask for different permissions within the app.
+Why a request code? The callback method onRequestPermissionRequest() should know which one to permit, a developer can code to ask for permissions at different stages in the app.
 
 ```
 val telephonyManager = getSystemService(TELEPHONY_SERVICE) as TelephonyManager
